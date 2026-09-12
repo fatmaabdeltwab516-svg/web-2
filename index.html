@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
@@ -12,55 +15,82 @@
       <div class="container">
         <img src="./Logo.svg" alt="" />
         <nav>
-          <a href="">Home</a>
-          <a href="#why">ABOUT US</a>
-          <a href="">Create your Plan</a>
+          <a href="./index.html">Home</a>
+          <a href="./aboutus.html">ABOUT US</a>
+          <a href="./subscribe.html">Create your Plan</a>
         </nav>
+             <i class="fa-solid fa-bars fs-2 cursor-pointer d-lg-none d-md-none" 
+   data-bs-toggle="offcanvas" 
+   data-bs-target="#mobileSidebar"></i>
 
-        <i id="menu" class="fa-solid fa-bars"></i>
+<div class="offcanvas offcanvas-start w-75 bg-dark text-white" tabindex="-1" id="mobileSidebar">
+  
+  <div class="offcanvas-header justify-content-end p-4">
+    <button type="button" class="btn-close btn-close-white fs-4" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+
+  <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center">
+    <ul class="nav flex-column text-center gap-4">
+      <li class="nav-item">
+        <a class="nav-link text-white fs-3 fw-semibold" href="./index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white fs-3 fw-semibold" href="./aboutus.html">ABOUT US</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white fs-3 fw-semibold" href="./subscribe.html">Create your Plan</a>
+      </li>
+      
+    </ul>
+  </div>
+
+</div>
+ 
       </div>
     </header>
     <section id="heroSection">
-      <div class="container">
-        <div class="box">
-          <h1>
-            Great coffee <br />
+      <div class="container"data-aos="fade-up" data-aos-duration="1000">
+        <div class="box-img"data-aos="fade-right" data-aos-duration="1000">
+          <div class="text">
+            <h1>
+            Great coffee </br>
             made simple.
           </h1>
           <p>Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.</p>
           <button>Create your plan</button>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="section2">
       <div class="container">
-        <img class="sectionHeading" src="./Collection Header.svg" alt="" />
-        <div class="box">
-          <div class="cards">
+        <img class="sectionHeading" data-aos="zoom-out-down" data-aos-duration="1000" src="./Collection Header.svg" alt="" />
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-3 cards"data-aos="zoom-in-down" data-aos-duration="1000">
             <img src="./Coffee01.png" alt="" />
-            <div>
+            <div class="text">
               <h2>Gran Espresso</h2>
               <p>Light and flavorful blend with cocoa and black pepper for an intense experience.</p>
             </div>
           </div>
-          <div class="cards">
+          <div class="col-12 col-md-12 col-lg-3 cards"data-aos="zoom-in-down" data-aos-duration="1000">
             <img src="./Coffee01.png" alt="" />
-            <div>
+            <div class="text">
               <h2>Gran Espresso</h2>
               <p>Light and flavorful blend with cocoa and black pepper for an intense experience.</p>
             </div>
           </div>
-          <div class="cards">
+          <div class="col-12 col-md-12 col-lg-3 cards"data-aos="zoom-in-down" data-aos-duration="1000">
             <img src="./Coffee01.png" alt="" />
-            <div>
+            <div class="text">
               <h2>Gran Espresso</h2>
               <p>Light and flavorful blend with cocoa and black pepper for an intense experience.</p>
             </div>
           </div>
-          <div class="cards">
+          <div class="col-12 col-md-12 col-lg-3 cards"data-aos="zoom-in-down" data-aos-duration="1000">
             <img src="./Coffee01.png" alt="" />
-            <div>
+            <div class="text">
               <h2>Gran Espresso</h2>
               <p>Light and flavorful blend with cocoa and black pepper for an intense experience.</p>
             </div>
@@ -74,29 +104,43 @@
     </section>
     <section id="section3">
       <div class="container">
-      <div class="img">
-        <div class="box">
-          <h3>Why choose us?</h3>
-          <p>A large part of our role is choosing which particular coffees will be featured 
+      <div class="img" data-aos="zoom-out-down" data-aos-duration="1000">
+        <div class="box ">
+          <h3 data-aos="zoom-in-down" data-aos-duration="1000">Why choose us?</h3>
+          <p >A large part of our role is choosing which particular coffees will be featured 
             in our range. This means working closely with the best coffee growers to give 
             you a more impactful experience on every level.</p>
         </div>
-        <div class="cards-2">
-          <img src="./Coffee Bean Icon.png" alt=""/>
-          <h1>Best quality</h1>
+       <div class="row g-3">
+         <div class="col-12 col col-md-12 col-lg-4 cards-2"data-aos="zoom-out-down" data-aos-duration="1000">
+         <div class="card-content">
+           <img src="./Coffee Bean Icon.png" class="mx-auto d-block" alt=""/>
+          <div class="text">
+            <h1>Best quality</h1>
           <p>Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>
+          </div>
+         </div>
 
         </div>
-        <div class="cards-2">
-           <img src="./Gift Icon.png" alt=""/>
-          <h1>Exclusive benefits</h1>
+        <div class="col-12 col col-md-12 col-lg-4 cards-2"data-aos="zoom-out-down" data-aos-duration="1000">
+         <div class="card-content">
+            <img src="./Gift Icon.png" class="mx-auto d-block" alt=""/>
+          <div class="text">
+            <h1>Exclusive benefits</h1>
           <p>Special offers and swag when you subscribe, including 30% off your first shipment.</p>
+          </div>
+         </div>
         </div>
-        <div class="cards-2">
-          <img src="./Truck Icon.png" alt=""/>
-          <h1>Free shipping</h1>
+        <div class="col-12 col col-md-12 col-lg-4 cards-2"data-aos="zoom-out-down" data-aos-duration="1000">
+          <div class="card-content">
+            <img src="./Truck Icon.png"  class="mx-auto d-block"  alt=""/>
+          <div class="text">
+            <h1>Free shipping</h1>
           <p>We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.</p>
+          </div>
+          </div>
         </div>
+       </div>
       </div>
       </div>
         
@@ -104,35 +148,36 @@
     <section id="section4">
       <div class="continer">
         <div class="box">
-          <h1>How it works</h1>
-          <img src="./How It Works Steps.png" alt=""/>
-          <div class="cards-3">
+          <h1 data-aos="fade-right" data-aos-duration="1000">How it works</h1>
+          <img src="./How It Works Steps.png" data-aos="zoom-in-down" data-aos-duration="1000" alt=""/>
+          <div class="cards-3"data-aos="zoom-out-down" data-aos-duration="1000">
             <h2>01</h2>
-            <h3>Pick your
+            <h3>Pick your</br>
               coffee</h3>
               <p>Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out.</p>
           </div>
-          <div class="cards-3">
+          <div class="cards-3"data-aos="zoom-out-down" data-aos-duration="1000">
             <h2>02</h2>
             <h3>Choose the frequency</h3>
               <p>Customize your order frequency, quantity, even your roast style and grind type. Pause, skip or cancel your subscription with no commitment through our online portal.</p>
           </div>
-          <div class="cards-3">
+          <div class="cards-3"data-aos="zoom-out-down" data-aos-duration="1000">
             <h2>03</h2>
             <h3>Receive and enjoy!</h3>
               <p>We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.</p>
           </div>
         </div>
-        <button>Create your plan</button>
+        <button data-aos="zoom-out-down" data-aos-duration="1000">Create your plan</button>
       </div>
     </section>
+    
     <footer>
        <div class="container-2">
         <img src="./Footer Logo.svg" alt="" />
         <div class="links" >
-          <a href="">Home</a>
-          <a href="">ABOUT US</a>
-          <a href="">Create your Plan</a>
+          <a href="./index.html">Home</a>
+          <a href="./aboutus.html">ABOUT US</a>
+          <a href="./subscribe.html">Create your Plan</a>
         </div>
         <div class="img-icon">
           <img src="./Path.png" alt="">
@@ -141,6 +186,9 @@
         </div>
       </div>
     </footer>
-    <div id="why"></div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
   </body>
 </html>
