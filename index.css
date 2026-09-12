@@ -248,7 +248,7 @@ header {
 #section3{
    
   .container{
-    height: 577px;
+    min-height: 577px;
     background-color: #333D4B;
      @media screen and (min-width:768px) and (max-width:992px){
      margin-bottom: 340px;
