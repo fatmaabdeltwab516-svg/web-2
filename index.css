@@ -29,7 +29,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 10;
     .container {
         
         display: flex;
@@ -74,6 +74,7 @@ header {
 
 #heroSection {
   padding-top: 80px;
+ 
     .container {
         
        .box-img{
@@ -164,10 +165,10 @@ header {
 
 
 #section2 {
-   
+   padding-bottom: 140px;
     @media screen and (max-width:767px){
         margin-top: 80px;
-        margin-bottom: 80px;
+        padding-bottom: 80px;
     }
     .container{
         img{
@@ -248,7 +249,7 @@ header {
 #section3{
    
   .container{
-    min-height: 577px;
+    height: 577px;
     background-color: #333D4B;
      @media screen and (min-width:768px) and (max-width:992px){
      margin-bottom: 340px;
