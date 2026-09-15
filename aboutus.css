@@ -167,7 +167,11 @@ header {
             background-color: #333D4B;
             border-radius: 12px;
             @media screen and (max-width:767px){
-                height: 508px;
+                height: auto;
+                min-height: auto;
+                padding-bottom: 40px;
+                position: relative;
+                overflow: visible;
                 margin-top: 80px;
             }
             
@@ -227,10 +231,15 @@ header {
             z-index: 1;
             margin-left: 120px;
             @media screen and (max-width:767px){
-                width: 280px;
+                width: 100%;
+                max-width: 280px;
                 height: 156px;
-                padding:0 16px 30px 16px;
-                margin-left: 0;
+                height: auto;
+                margin: 0 auto;
+                display: block;
+                position: relative;
+                top: -60px;
+                margin-bottom: -60px;
             }
             @media screen and (min-width:768px) and (max-width:992px){
                   width: 573px;
